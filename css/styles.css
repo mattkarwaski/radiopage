@@ -1,0 +1,358 @@
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  background: url(https://w.wallhaven.cc/full/k9/wallhaven-k967mm.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body .container,
+html .container {
+  width: 100vw;
+  margin-top: 30px;
+}
+
+body .container .contaiter-block,
+html .container .contaiter-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 10px 10px 20px;
+}
+
+body .container .contaiter-block .text,
+html .container .contaiter-block .text {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 5px 2px rgba(230, 219, 219, 0.541);
+  -webkit-animation: shake 0.8s infinite alternate;
+          animation: shake 0.8s infinite alternate;
+}
+
+body button,
+html button {
+  cursor: pointer;
+  color: azure;
+  margin: 10px 10px 10px 20px;
+  background: linear-gradient(217deg, #252323, #2487c0);
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.514);
+          box-shadow: 5px 5px rgba(0, 0, 0, 0.514);
+  /*&:focus {
+      background: linear-gradient(217deg, rgb(37, 35, 35), rgb(243, 1, 42));
+    }*/
+}
+
+body button:hover,
+html button:hover {
+  -webkit-animation: shakeText 1s;
+          animation: shakeText 1s;
+  color: black;
+}
+
+body button:active,
+html button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  -webkit-animation: color-change 5s infinite;
+          animation: color-change 5s infinite;
+  background: -webkit-gradient(linear, left top, left bottom, from(217deg), color-stop(#252323), to(#2487c0));
+  background: linear-gradient(180deg, 217deg, #252323, #2487c0);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  -webkit-animation: color-change 5s infinite;
+          animation: color-change 5s infinite;
+  background: -webkit-gradient(linear, left top, left bottom, from(217deg), color-stop(#252323), to(#2487c0));
+  background: linear-gradient(180deg, 217deg, #252323, #2487c0);
+}
+
+footer a img {
+  float: right;
+  padding: 5px 0px 0px 20px;
+  width: 30px;
+  height: 30px;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: whitesmoke;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: whitesmoke;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
+@-webkit-keyframes shakeText {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes shakeText {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    height: 100vh;
+    margin: 0;
+    background: url(https://w.wallhaven.cc/full/k9/wallhaven-k967mm.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  body button,
+  html button {
+    cursor: pointer;
+    width: 300px;
+  }
+  body input[type="range"],
+  html input[type="range"] {
+    width: 80%;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: auto;
+  width: 30%;
+  height: 20px;
+  scale: 0.9;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  /*for Chrome*/
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+  background: #45515ce8;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff71;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #45515ce8;
+}
+
+input[type=range]::-moz-range-track {
+  /*for Firefox*/
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+  background: #45515ce8;
+  border-radius: 2px;
+  border: 2px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+  border: 1px solid #000000;
+  height: 45px;
+  width: 18px;
+  border-radius: 10px;
+  background: #ffffff71;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  /*for Internet Explorer */
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #45515ce8;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #45515ce8;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #000000;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff71;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #45515ce8;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #45515ce8;
+}
+/*# sourceMappingURL=styles.css.map */
